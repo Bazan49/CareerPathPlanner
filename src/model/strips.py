@@ -3,7 +3,7 @@ Módulo STRIPS para planificación clásica.
 """
 
 from typing import Optional, Set, List
-from model.course import Course
+from src.model.course import Course
 
 class STRIPSProblem:
     """
