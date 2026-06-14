@@ -1,5 +1,5 @@
 from src.planner.search import search
-from src.planner.strips import STRIPSProblem
+from src.model.strips import STRIPSProblem
 
 def a_star_basic_planner(problem: STRIPSProblem, action_cost: dict, return_stats=True):
     """

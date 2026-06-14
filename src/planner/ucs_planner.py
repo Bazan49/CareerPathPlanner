@@ -1,4 +1,4 @@
-from planner.strips import STRIPSProblem
+from src.model.strips import STRIPSProblem
 from src.planner.search import search
 
 def ucs_planner(problem: STRIPSProblem, action_cost: dict, return_stats=True):
