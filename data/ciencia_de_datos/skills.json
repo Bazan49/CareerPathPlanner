@@ -1,0 +1,281 @@
+{
+  "skills": [
+    {
+      "id": "matematicas_basicas",
+      "name": "Matemáticas Básicas",
+      "level": 0,
+      "requires": [],
+      "description": "Fundamentos de aritmética y álgebra"
+    },
+    {
+      "id": "estadistica_descriptiva",
+      "name": "Estadística Descriptiva",
+      "level": 0,
+      "requires": [],
+      "description": "Medidas de tendencia central y dispersión"
+    },
+    {
+      "id": "programacion_basica",
+      "name": "Programación Básica",
+      "level": 0,
+      "requires": [],
+      "description": "Sintaxis y lógica en un lenguaje de programación"
+    },
+    {
+      "id": "introduccion_a_la_ciencia_de_datos",
+      "name": "Introducción a la Ciencia de Datos",
+      "level": 0,
+      "requires": [],
+      "description": "Conceptos básicos y aplicaciones"
+    },
+    {
+      "id": "algebra_lineal",
+      "name": "Álgebra Lineal",
+      "level": 1,
+      "requires": [
+        "matematicas_basicas"
+      ],
+      "description": "Vectores, matrices y operaciones"
+    },
+    {
+      "id": "probabilidad",
+      "name": "Probabilidad",
+      "level": 1,
+      "requires": [
+        "estadistica_descriptiva"
+      ],
+      "description": "Distribuciones y teorema de Bayes"
+    },
+    {
+      "id": "python_para_ciencia_de_datos",
+      "name": "Python para Ciencia de Datos",
+      "level": 1,
+      "requires": [
+        "programacion_basica"
+      ],
+      "description": "Librerías como NumPy y Pandas"
+    },
+    {
+      "id": "visualizacion_de_datos",
+      "name": "Visualización de Datos",
+      "level": 1,
+      "requires": [
+        "estadistica_descriptiva"
+      ],
+      "description": "Herramientas como Matplotlib y Seaborn"
+    },
+    {
+      "id": "sql_basico",
+      "name": "SQL Básico",
+      "level": 1,
+      "requires": [
+        "programacion_basica"
+      ],
+      "description": "Consultas y manipulación de bases de datos"
+    },
+    {
+      "id": "machine_learning_basico",
+      "name": "Machine Learning Básico",
+      "level": 1,
+      "requires": [
+        "probabilidad",
+        "python_para_ciencia_de_datos"
+      ],
+      "description": "Modelos supervisados y no supervisados"
+    },
+    {
+      "id": "calculo_diferencial_e_integral",
+      "name": "Cálculo Diferencial e Integral",
+      "level": 1,
+      "requires": [
+        "algebra_lineal"
+      ],
+      "description": "Derivadas e integrales para optimización"
+    },
+    {
+      "id": "estadistica_inferencial",
+      "name": "Estadística Inferencial",
+      "level": 1,
+      "requires": [
+        "probabilidad"
+      ],
+      "description": "Intervalos de confianza y pruebas de hipótesis"
+    },
+    {
+      "id": "limpieza_de_datos",
+      "name": "Limpieza de Datos",
+      "level": 1,
+      "requires": [
+        "python_para_ciencia_de_datos"
+      ],
+      "description": "Preprocesamiento y manejo de datos faltantes"
+    },
+    {
+      "id": "modelos_de_regresion",
+      "name": "Modelos de Regresión",
+      "level": 2,
+      "requires": [
+        "machine_learning_basico",
+        "calculo_diferencial_e_integral"
+      ],
+      "description": "Regresión lineal y logística"
+    },
+    {
+      "id": "redes_neuronales",
+      "name": "Redes Neuronales",
+      "level": 2,
+      "requires": [
+        "algebra_lineal",
+        "calculo_diferencial_e_integral"
+      ],
+      "description": "Perceptrones y arquitecturas básicas"
+    },
+    {
+      "id": "big_data_basico",
+      "name": "Big Data Básico",
+      "level": 2,
+      "requires": [
+        "sql_basico",
+        "python_para_ciencia_de_datos"
+      ],
+      "description": "Introducción a Hadoop y Spark"
+    },
+    {
+      "id": "optimizacion",
+      "name": "Optimización",
+      "level": 2,
+      "requires": [
+        "calculo_diferencial_e_integral"
+      ],
+      "description": "Métodos como gradiente descendente"
+    },
+    {
+      "id": "analisis_de_series_temporales",
+      "name": "Análisis de Series Temporales",
+      "level": 2,
+      "requires": [
+        "estadistica_inferencial",
+        "modelos_de_regresion"
+      ],
+      "description": "Modelos ARIMA y descomposición"
+    },
+    {
+      "id": "deep_learning",
+      "name": "Deep Learning",
+      "level": 2,
+      "requires": [
+        "redes_neuronales",
+        "optimizacion"
+      ],
+      "description": "Redes convolucionales y recurrentes"
+    },
+    {
+      "id": "procesamiento_de_lenguaje_natural",
+      "name": "Procesamiento de Lenguaje Natural",
+      "level": 2,
+      "requires": [
+        "machine_learning_basico",
+        "estadistica_inferencial"
+      ],
+      "description": "Tokenización y modelos de lenguaje"
+    },
+    {
+      "id": "mineria_de_datos",
+      "name": "Minería de Datos",
+      "level": 2,
+      "requires": [
+        "limpieza_de_datos",
+        "machine_learning_basico"
+      ],
+      "description": "Técnicas de extracción de patrones"
+    },
+    {
+      "id": "cloud_computing_para_ciencia_de_datos",
+      "name": "Cloud Computing para Ciencia de Datos",
+      "level": 2,
+      "requires": [
+        "big_data_basico"
+      ],
+      "description": "AWS, GCP y Azure para análisis"
+    },
+    {
+      "id": "modelos_avanzados_de_machine_learning",
+      "name": "Modelos Avanzados de Machine Learning",
+      "level": 3,
+      "requires": [
+        "machine_learning_basico",
+        "deep_learning"
+      ],
+      "description": "Ensambles y boosting"
+    },
+    {
+      "id": "optimizacion_avanzada",
+      "name": "Optimización Avanzada",
+      "level": 3,
+      "requires": [
+        "optimizacion",
+        "calculo_diferencial_e_integral"
+      ],
+      "description": "Métodos como Newton y cuasi-Newton"
+    },
+    {
+      "id": "sistemas_de_recomendacion",
+      "name": "Sistemas de Recomendación",
+      "level": 3,
+      "requires": [
+        "machine_learning_basico",
+        "procesamiento_de_lenguaje_natural"
+      ],
+      "description": "Filtrado colaborativo y basado en contenido"
+    },
+    {
+      "id": "computer_vision",
+      "name": "Computer Vision",
+      "level": 3,
+      "requires": [
+        "deep_learning",
+        "redes_neuronales"
+      ],
+      "description": "Detección de objetos y segmentación"
+    },
+    {
+      "id": "metodos_bayesianos",
+      "name": "Métodos Bayesianos",
+      "level": 3,
+      "requires": [
+        "probabilidad",
+        "estadistica_inferencial"
+      ],
+      "description": "Redes bayesianas y MCMC"
+    },
+    {
+      "id": "ciencia_de_datos_en_produccion",
+      "name": "Ciencia de Datos en Producción",
+      "level": 3,
+      "requires": [
+        "cloud_computing_para_ciencia_de_datos",
+        "modelos_avanzados_de_machine_learning"
+      ],
+      "description": "Despliegue y monitoreo de modelos"
+    },
+    {
+      "id": "etica_en_ciencia_de_datos",
+      "name": "Ética en Ciencia de Datos",
+      "level": 3,
+      "requires": [
+        "introduccion_a_la_ciencia_de_datos"
+      ],
+      "description": "Sesgos y privacidad en modelos"
+    },
+    {
+      "id": "investigacion_en_ciencia_de_datos",
+      "name": "Investigación en Ciencia de Datos",
+      "level": 3,
+      "requires": [
+        "modelos_avanzados_de_machine_learning",
+        "metodos_bayesianos"
+      ],
+      "description": "Publicaciones y avances recientes"
+    }
+  ]
+}

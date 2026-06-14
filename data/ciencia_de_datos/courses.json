@@ -1,0 +1,783 @@
+{
+  "courses": [
+    {
+      "id": "course_1",
+      "name": "Fundamentos de Ciencia de Datos y Estadística",
+      "preconditions": [],
+      "adds": [
+        "introduccion_a_la_ciencia_de_datos",
+        "estadistica_descriptiva"
+      ],
+      "duration": 49,
+      "level": "Beginner",
+      "difficulty_score": 0.05,
+      "description": "Aprende los conceptos básicos de la ciencia de datos y las principales medidas estadísticas (media, mediana, desviación) para describir conjuntos de datos."
+    },
+    {
+      "id": "course_2",
+      "name": "Optimización Avanzada: Métodos de Gradiente",
+      "preconditions": [
+        "optimizacion",
+        "calculo_diferencial_e_integral"
+      ],
+      "adds": [
+        "optimizacion_avanzada"
+      ],
+      "duration": 161,
+      "level": "Expert",
+      "difficulty_score": 0.35944730353236864,
+      "description": "Domina técnicas de optimización de alto nivel como gradiente descendente, Newton y cuasi-Newton, esenciales para entrenar modelos complejos."
+    },
+    {
+      "id": "course_3",
+      "name": "Despliegue de Modelos, Sistemas de Recomendación y Métodos Bayesianos",
+      "preconditions": [
+        "probabilidad",
+        "modelos_avanzados_de_machine_learning",
+        "machine_learning_basico",
+        "estadistica_inferencial",
+        "procesamiento_de_lenguaje_natural",
+        "cloud_computing_para_ciencia_de_datos"
+      ],
+      "adds": [
+        "ciencia_de_datos_en_produccion",
+        "sistemas_de_recomendacion",
+        "metodos_bayesianos"
+      ],
+      "duration": 179,
+      "level": "Expert",
+      "difficulty_score": 0.95,
+      "description": "Aprende a llevar modelos a producción, construir sistemas de recomendación y aplicar inferencia bayesiana a problemas complejos de datos."
+    },
+    {
+      "id": "course_4",
+      "name": "Introducción a Ciencia de Datos, Estadística y Matemáticas",
+      "preconditions": [],
+      "adds": [
+        "introduccion_a_la_ciencia_de_datos",
+        "estadistica_descriptiva",
+        "matematicas_basicas"
+      ],
+      "duration": 61,
+      "level": "Beginner",
+      "difficulty_score": 0.05738572603346457,
+      "description": "Un curso integral que cubre los fundamentos: matemáticas básicas, estadística descriptiva y primeros pasos en ciencia de datos."
+    },
+    {
+      "id": "course_5",
+      "name": "Álgebra Lineal y Visualización de Datos",
+      "preconditions": [
+        "estadistica_descriptiva",
+        "matematicas_basicas"
+      ],
+      "adds": [
+        "algebra_lineal",
+        "visualizacion_de_datos"
+      ],
+      "duration": 71,
+      "level": "Intermediate",
+      "difficulty_score": 0.18304822526629574,
+      "description": "Aprende operaciones con vectores y matrices, y crea visualizaciones impactantes usando bibliotecas como Matplotlib y Seaborn."
+    },
+    {
+      "id": "course_6",
+      "name": "Machine Learning Básico con Python",
+      "preconditions": [
+        "python_para_ciencia_de_datos",
+        "probabilidad"
+      ],
+      "adds": [
+        "machine_learning_basico"
+      ],
+      "duration": 75,
+      "level": "Intermediate",
+      "difficulty_score": 0.07969648253658004,
+      "description": "Introducción a los modelos supervisados y no supervisados usando scikit-learn, con ejemplos prácticos y evaluación de rendimiento."
+    },
+    {
+      "id": "course_7",
+      "name": "Primeros Pasos en Ciencia de Datos y Matemáticas",
+      "preconditions": [],
+      "adds": [
+        "introduccion_a_la_ciencia_de_datos",
+        "matematicas_basicas"
+      ],
+      "duration": 54,
+      "level": "Beginner",
+      "difficulty_score": 0.05,
+      "description": "Combina los fundamentos de la ciencia de datos con las matemáticas básicas necesarias para entender los algoritmos."
+    },
+    {
+      "id": "course_8",
+      "name": "Sistemas de Recomendación y Visión por Computador",
+      "preconditions": [
+        "procesamiento_de_lenguaje_natural",
+        "redes_neuronales",
+        "machine_learning_basico",
+        "deep_learning"
+      ],
+      "adds": [
+        "sistemas_de_recomendacion",
+        "computer_vision"
+      ],
+      "duration": 160,
+      "level": "Expert",
+      "difficulty_score": 0.5975245650801762,
+      "description": "Construye motores de recomendación y aplica redes neuronales convolucionales a problemas de reconocimiento de imágenes y vídeo."
+    },
+    {
+      "id": "course_9",
+      "name": "Procesamiento de Lenguaje Natural, Deep Learning y Series Temporales",
+      "preconditions": [
+        "optimizacion",
+        "redes_neuronales",
+        "machine_learning_basico",
+        "estadistica_inferencial",
+        "modelos_de_regresion"
+      ],
+      "adds": [
+        "procesamiento_de_lenguaje_natural",
+        "deep_learning",
+        "analisis_de_series_temporales"
+      ],
+      "duration": 128,
+      "level": "Advanced",
+      "difficulty_score": 0.5406400753933841,
+      "description": "Aprende a procesar texto, implementar redes profundas y analizar datos temporales con modelos ARIMA y redes recurrentes."
+    },
+    {
+      "id": "course_10",
+      "name": "Álgebra Lineal y Visualización de Datos (II)",
+      "preconditions": [
+        "estadistica_descriptiva",
+        "matematicas_basicas"
+      ],
+      "adds": [
+        "algebra_lineal",
+        "visualizacion_de_datos"
+      ],
+      "duration": 73,
+      "level": "Intermediate",
+      "difficulty_score": 0.14816274193344026,
+      "description": "Refuerza tus habilidades en álgebra lineal y aprende a comunicar insights con gráficos avanzados."
+    },
+    {
+      "id": "course_11",
+      "name": "Análisis de Series Temporales Aplicado",
+      "preconditions": [
+        "modelos_de_regresion",
+        "estadistica_inferencial"
+      ],
+      "adds": [
+        "analisis_de_series_temporales"
+      ],
+      "duration": 104,
+      "level": "Advanced",
+      "difficulty_score": 0.1970520372008912,
+      "description": "Modela y pronostica datos secuenciales (finanzas, meteorología, ventas) usando técnicas de descomposición y modelos ARIMA."
+    },
+    {
+      "id": "course_12",
+      "name": "Visión por Computador Avanzada",
+      "preconditions": [
+        "redes_neuronales",
+        "deep_learning"
+      ],
+      "adds": [
+        "computer_vision"
+      ],
+      "duration": 167,
+      "level": "Expert",
+      "difficulty_score": 0.3533598435335582,
+      "description": "Profundiza en redes convolucionales, detección de objetos y segmentación semántica con frameworks como TensorFlow o PyTorch."
+    },
+    {
+      "id": "course_13",
+      "name": "Estadística Descriptiva, Ciencia de Datos y Matemáticas",
+      "preconditions": [],
+      "adds": [
+        "estadistica_descriptiva",
+        "introduccion_a_la_ciencia_de_datos",
+        "matematicas_basicas"
+      ],
+      "duration": 67,
+      "level": "Beginner",
+      "difficulty_score": 0.05853115194869208,
+      "description": "Una introducción combinada: estadística descriptiva, ciencia de datos y matemáticas básicas para futuros científicos de datos."
+    },
+    {
+      "id": "course_14",
+      "name": "Python para Ciencia de Datos, Probabilidad y Álgebra Lineal",
+      "preconditions": [
+        "programacion_basica",
+        "estadistica_descriptiva",
+        "matematicas_basicas"
+      ],
+      "adds": [
+        "python_para_ciencia_de_datos",
+        "probabilidad",
+        "algebra_lineal"
+      ],
+      "duration": 84,
+      "level": "Intermediate",
+      "difficulty_score": 0.21305217023132542,
+      "description": "Aprende a programar en Python con NumPy/Pandas, conceptos de probabilidad y operaciones de álgebra lineal, claves para el ML."
+    },
+    {
+      "id": "course_15",
+      "name": "Ética e Investigación en Ciencia de Datos",
+      "preconditions": [
+        "introduccion_a_la_ciencia_de_datos",
+        "modelos_avanzados_de_machine_learning",
+        "metodos_bayesianos"
+      ],
+      "adds": [
+        "etica_en_ciencia_de_datos",
+        "investigacion_en_ciencia_de_datos"
+      ],
+      "duration": 173,
+      "level": "Expert",
+      "difficulty_score": 0.7076997423919337,
+      "description": "Comprende los sesgos, la privacidad y las buenas prácticas en proyectos de datos, y aprende a comunicar resultados científicos."
+    },
+    {
+      "id": "course_16",
+      "name": "Estadística Inferencial y Machine Learning Básico",
+      "preconditions": [
+        "python_para_ciencia_de_datos",
+        "probabilidad"
+      ],
+      "adds": [
+        "estadistica_inferencial",
+        "machine_learning_basico"
+      ],
+      "duration": 80,
+      "level": "Intermediate",
+      "difficulty_score": 0.1486565165730495,
+      "description": "Combina la inferencia estadística (intervalos, test de hipótesis) con los primeros modelos de machine learning."
+    },
+    {
+      "id": "course_17",
+      "name": "Fundamentos de Big Data",
+      "preconditions": [
+        "sql_basico",
+        "python_para_ciencia_de_datos"
+      ],
+      "adds": [
+        "big_data_basico"
+      ],
+      "duration": 109,
+      "level": "Advanced",
+      "difficulty_score": 0.1858741615955512,
+      "description": "Introducción a Hadoop, Spark y el procesamiento distribuido para manejar grandes volúmenes de datos."
+    },
+    {
+      "id": "course_18",
+      "name": "Minería de Datos y Optimización Avanzada",
+      "preconditions": [
+        "optimizacion",
+        "machine_learning_basico",
+        "limpieza_de_datos",
+        "calculo_diferencial_e_integral"
+      ],
+      "adds": [
+        "mineria_de_datos",
+        "optimizacion_avanzada"
+      ],
+      "duration": 176,
+      "level": "Expert",
+      "difficulty_score": 0.5418830708334257,
+      "description": "Descubre patrones ocultos en grandes conjuntos de datos y optimiza algoritmos con métodos numéricos avanzados."
+    },
+    {
+      "id": "course_19",
+      "name": "Análisis de Series Temporales (Refuerzo)",
+      "preconditions": [
+        "modelos_de_regresion",
+        "estadistica_inferencial"
+      ],
+      "adds": [
+        "analisis_de_series_temporales"
+      ],
+      "duration": 111,
+      "level": "Advanced",
+      "difficulty_score": 0.17647219301602193,
+      "description": "Profundiza en técnicas de forecasting, estacionalidad y modelos de suavizado exponencial."
+    },
+    {
+      "id": "course_20",
+      "name": "Modelos de Regresión y Redes Neuronales",
+      "preconditions": [
+        "algebra_lineal",
+        "machine_learning_basico",
+        "calculo_diferencial_e_integral"
+      ],
+      "adds": [
+        "modelos_de_regresion",
+        "redes_neuronales"
+      ],
+      "duration": 130,
+      "level": "Advanced",
+      "difficulty_score": 0.3647094724190215,
+      "description": "Aprende regresión lineal/logística y los fundamentos de las redes neuronales (perceptrones, backpropagation)."
+    },
+    {
+      "id": "course_21",
+      "name": "Introducción a Ciencia de Datos, Programación y Matemáticas",
+      "preconditions": [],
+      "adds": [
+        "introduccion_a_la_ciencia_de_datos",
+        "programacion_basica",
+        "matematicas_basicas"
+      ],
+      "duration": 51,
+      "level": "Beginner",
+      "difficulty_score": 0.05840094797541243,
+      "description": "Una base sólida: nociones de ciencia de datos, fundamentos de programación y matemáticas básicas."
+    },
+    {
+      "id": "course_22",
+      "name": "Sistemas de Recomendación y Visión por Computador (II)",
+      "preconditions": [
+        "procesamiento_de_lenguaje_natural",
+        "redes_neuronales",
+        "machine_learning_basico",
+        "deep_learning"
+      ],
+      "adds": [
+        "sistemas_de_recomendacion",
+        "computer_vision"
+      ],
+      "duration": 162,
+      "level": "Expert",
+      "difficulty_score": 0.7234463084879492,
+      "description": "Segundo curso sobre sistemas de recomendación y visión artificial, con proyectos prácticos y casos de uso reales."
+    },
+    {
+      "id": "course_23",
+      "name": "Cloud Computing para Datos y Modelos Avanzados",
+      "preconditions": [
+        "deep_learning",
+        "machine_learning_basico",
+        "big_data_basico"
+      ],
+      "adds": [
+        "cloud_computing_para_ciencia_de_datos",
+        "modelos_avanzados_de_machine_learning"
+      ],
+      "duration": 168,
+      "level": "Expert",
+      "difficulty_score": 0.5698990184374013,
+      "description": "Aprende a desplegar modelos en la nube (AWS, GCP, Azure) y a construir pipelines de ML escalables."
+    },
+    {
+      "id": "course_24",
+      "name": "Probabilidad y Álgebra Lineal Aplicada",
+      "preconditions": [
+        "estadistica_descriptiva",
+        "matematicas_basicas"
+      ],
+      "adds": [
+        "probabilidad",
+        "algebra_lineal"
+      ],
+      "duration": 72,
+      "level": "Intermediate",
+      "difficulty_score": 0.17778463419648918,
+      "description": "Conceptos clave de probabilidad (distribuciones, Bayes) y álgebra lineal para entender el funcionamiento de los algoritmos de ML."
+    },
+    {
+      "id": "course_25",
+      "name": "Programación Básica e Introducción a la Ciencia de Datos",
+      "preconditions": [],
+      "adds": [
+        "programacion_bacica",
+        "introduccion_a_la_ciencia_de_datos"
+      ],
+      "duration": 43,
+      "level": "Beginner",
+      "difficulty_score": 0.05,
+      "description": "Empieza a programar y conoce los fundamentos de la ciencia de datos: desde variables hasta análisis exploratorio."
+    },
+    {
+      "id": "course_26",
+      "name": "Optimización Avanzada y Minería de Datos",
+      "preconditions": [
+        "optimizacion",
+        "machine_learning_basico",
+        "calculo_diferencial_e_integral",
+        "limpieza_de_datos"
+      ],
+      "adds": [
+        "optimizacion_avanzada",
+        "mineria_de_datos"
+      ],
+      "duration": 170,
+      "level": "Expert",
+      "difficulty_score": 0.5022428999109088,
+      "description": "Combina técnicas de optimización avanzada con minería de datos para extraer valor de grandes volúmenes de información."
+    },
+    {
+      "id": "course_27",
+      "name": "Python para Ciencia de Datos",
+      "preconditions": [
+        "programacion_basica"
+      ],
+      "adds": [
+        "python_para_ciencia_de_datos"
+      ],
+      "duration": 74,
+      "level": "Intermediate",
+      "difficulty_score": 0.07987864859716809,
+      "description": "Domina las librerías esenciales: NumPy, Pandas, Matplotlib y Seaborn para análisis y visualización de datos."
+    },
+    {
+      "id": "course_28",
+      "name": "Cloud Computing para Ciencia de Datos",
+      "preconditions": [
+        "big_data_basico"
+      ],
+      "adds": [
+        "cloud_computing_para_ciencia_de_datos"
+      ],
+      "duration": 107,
+      "level": "Advanced",
+      "difficulty_score": 0.21348174363091021,
+      "description": "Aprende a usar servicios en la nube (AWS S3, EC2, EMR) para procesar y almacenar grandes conjuntos de datos."
+    },
+    {
+      "id": "course_29",
+      "name": "Estadística, Matemáticas y Programación Básica",
+      "preconditions": [],
+      "adds": [
+        "estadistica_descriptiva",
+        "matematicas_basicas",
+        "programacion_basica"
+      ],
+      "duration": 55,
+      "level": "Beginner",
+      "difficulty_score": 0.07129705707526983,
+      "description": "Un curso introductorio que cubre estadística descriptiva, matemáticas elementales y programación, ideal para empezar."
+    },
+    {
+      "id": "course_30",
+      "name": "Estadística Inferencial",
+      "preconditions": [
+        "probabilidad"
+      ],
+      "adds": [
+        "estadistica_inferencial"
+      ],
+      "duration": 75,
+      "level": "Intermediate",
+      "difficulty_score": 0.08206737088692805,
+      "description": "Aprende intervalos de confianza, pruebas de hipótesis y cómo tomar decisiones basadas en muestras de datos."
+    },
+    {
+      "id": "course_31",
+      "name": "Big Data Básico con SQL y Python",
+      "preconditions": [
+        "sql_basico",
+        "python_para_ciencia_de_datos"
+      ],
+      "adds": [
+        "big_data_basico"
+      ],
+      "duration": 102,
+      "level": "Advanced",
+      "difficulty_score": 0.21014638480559109,
+      "description": "Introducción a Spark y Hadoop, con ejemplos prácticos usando SQL y Python para procesar datos a gran escala."
+    },
+    {
+      "id": "course_32",
+      "name": "Estadística, Matemáticas y Programación (Nivel Inicial)",
+      "preconditions": [],
+      "adds": [
+        "estadistica_descriptiva",
+        "matematicas_basicas",
+        "programacion_basica"
+      ],
+      "duration": 66,
+      "level": "Beginner",
+      "difficulty_score": 0.056439489680110595,
+      "description": "Repasa los fundamentos de estadística, matemáticas y programación para construir una base sólida en ciencia de datos."
+    },
+    {
+      "id": "course_33",
+      "name": "Series Temporales, Deep Learning y PLN",
+      "preconditions": [
+        "optimizacion",
+        "redes_neuronales",
+        "machine_learning_basico",
+        "estadistica_inferencial",
+        "modelos_de_regresion"
+      ],
+      "adds": [
+        "analisis_de_series_temporales",
+        "deep_learning",
+        "procesamiento_de_lenguaje_natural"
+      ],
+      "duration": 135,
+      "level": "Advanced",
+      "difficulty_score": 0.5510407004620488,
+      "description": "Integra predicción de series, redes profundas y procesamiento de lenguaje natural para resolver problemas complejos."
+    },
+    {
+      "id": "course_34",
+      "name": "Machine Learning Básico (Scikit-learn)",
+      "preconditions": [
+        "python_para_ciencia_de_datos",
+        "probabilidad"
+      ],
+      "adds": [
+        "machine_learning_basico"
+      ],
+      "duration": 72,
+      "level": "Intermediate",
+      "difficulty_score": 0.08707949837220383,
+      "description": "Aplica algoritmos de clasificación, regresión y clustering con scikit-learn, y evalúa su rendimiento."
+    },
+    {
+      "id": "course_35",
+      "name": "Modelos de Regresión, Limpieza de Datos y Big Data",
+      "preconditions": [
+        "sql_basico",
+        "python_para_ciencia_de_datos",
+        "machine_learning_basico",
+        "calculo_diferencial_e_integral"
+      ],
+      "adds": [
+        "modelos_de_regresion",
+        "limpieza_de_datos",
+        "big_data_basico"
+      ],
+      "duration": 123,
+      "level": "Advanced",
+      "difficulty_score": 0.4349392500290913,
+      "description": "Aprende a preparar datos, construir modelos de regresión y manejar grandes volúmenes con herramientas de big data."
+    },
+    {
+      "id": "course_36",
+      "name": "Machine Learning Básico (Refuerzo)",
+      "preconditions": [
+        "python_para_ciencia_de_datos",
+        "probabilidad"
+      ],
+      "adds": [
+        "machine_learning_basico"
+      ],
+      "duration": 74,
+      "level": "Intermediate",
+      "difficulty_score": 0.08552444763777613,
+      "description": "Refuerza tus conocimientos de ML con más ejemplos prácticos y ejercicios de ajuste de hiperparámetros."
+    },
+    {
+      "id": "course_37",
+      "name": "Introducción a la Ciencia de Datos",
+      "preconditions": [],
+      "adds": [
+        "introduccion_a_la_ciencia_de_datos"
+      ],
+      "duration": 36,
+      "level": "Beginner",
+      "difficulty_score": 0.05,
+      "description": "Primer contacto con el campo: qué es la ciencia de datos, sus aplicaciones y el flujo de trabajo típico."
+    },
+    {
+      "id": "course_38",
+      "name": "Visión por Computador y Sistemas de Recomendación",
+      "preconditions": [
+        "procesamiento_de_lenguaje_natural",
+        "redes_neuronales",
+        "deep_learning",
+        "machine_learning_basico"
+      ],
+      "adds": [
+        "computer_vision",
+        "sistemas_de_recomendacion"
+      ],
+      "duration": 172,
+      "level": "Expert",
+      "difficulty_score": 0.5712274408726061,
+      "description": "Aplica redes neuronales a imágenes y construye sistemas de recomendación colaborativos y basados en contenido."
+    },
+    {
+      "id": "course_39",
+      "name": "Fundamentos de Ciencia de Datos y Estadística (I)",
+      "preconditions": [],
+      "adds": [
+        "introduccion_a_la_ciencia_de_datos",
+        "estadistica_descriptiva"
+      ],
+      "duration": 49,
+      "level": "Beginner",
+      "difficulty_score": 0.05,
+      "description": "Versión compacta de los fundamentos: estadística descriptiva y primeros conceptos de ciencia de datos."
+    },
+    {
+      "id": "course_40",
+      "name": "Sistemas de Recomendación y Despliegue en Producción",
+      "preconditions": [
+        "procesamiento_de_lenguaje_natural",
+        "cloud_computing_para_ciencia_de_datos",
+        "modelos_avanzados_de_machine_learning",
+        "machine_learning_basico"
+      ],
+      "adds": [
+        "sistemas_de_recomendacion",
+        "ciencia_de_datos_en_produccion"
+      ],
+      "duration": 170,
+      "level": "Expert",
+      "difficulty_score": 0.7542319576616632,
+      "description": "Aprende a implementar sistemas de recomendación a gran escala y desplegar modelos en entornos productivos."
+    },
+    {
+      "id": "course_41",
+      "name": "Programación y Matemáticas para Datos",
+      "preconditions": [],
+      "adds": [
+        "programacion_basica",
+        "matematicas_basicas"
+      ],
+      "duration": 56,
+      "level": "Beginner",
+      "difficulty_score": 0.05,
+      "description": "Curso de introducción a la programación y a las matemáticas necesarias para el análisis de datos."
+    },
+    {
+      "id": "course_42",
+      "name": "SQL Básico y Cálculo Diferencial",
+      "preconditions": [
+        "programacion_basica",
+        "algebra_lineal"
+      ],
+      "adds": [
+        "sql_basico",
+        "calculo_diferencial_e_integral"
+      ],
+      "duration": 79,
+      "level": "Intermediate",
+      "difficulty_score": 0.14274727066068318,
+      "description": "Domina las consultas SQL y los fundamentos del cálculo (derivadas e integrales) para optimización."
+    },
+    {
+      "id": "course_43",
+      "name": "Estadística Inferencial Aplicada",
+      "preconditions": [
+        "probabilidad"
+      ],
+      "adds": [
+        "estadistica_inferencial"
+      ],
+      "duration": 78,
+      "level": "Intermediate",
+      "difficulty_score": 0.0743395605582986,
+      "description": "Aplica la teoría de intervalos de confianza y pruebas de hipótesis a casos reales con Python."
+    },
+    {
+      "id": "course_44",
+      "name": "SQL Básico para Análisis de Datos",
+      "preconditions": [
+        "programacion_basica"
+      ],
+      "adds": [
+        "sql_basico"
+      ],
+      "duration": 62,
+      "level": "Intermediate",
+      "difficulty_score": 0.08763933565932863,
+      "description": "Aprende a consultar bases de datos relacionales con SELECT, JOIN, GROUP BY y subconsultas."
+    },
+    {
+      "id": "course_45",
+      "name": "Estadística Descriptiva Fundamental",
+      "preconditions": [],
+      "adds": [
+        "estadistica_descriptiva"
+      ],
+      "duration": 43,
+      "level": "Beginner",
+      "difficulty_score": 0.05,
+      "description": "Conceptos básicos de estadística descriptiva: medidas de centralidad, dispersión y representaciones gráficas."
+    },
+    {
+      "id": "course_46",
+      "name": "Ética en Ciencia de Datos",
+      "preconditions": [
+        "introduccion_a_la_ciencia_de_datos"
+      ],
+      "adds": [
+        "etica_en_ciencia_de_datos"
+      ],
+      "duration": 152,
+      "level": "Expert",
+      "difficulty_score": 0.3749345178470941,
+      "description": "Explora los sesgos algorítmicos, la privacidad de los datos y las responsabilidades éticas del científico de datos."
+    },
+    {
+      "id": "course_47",
+      "name": "Optimización Avanzada (Nivel Experto)",
+      "preconditions": [
+        "optimizacion",
+        "calculo_diferencial_e_integral"
+      ],
+      "adds": [
+        "optimizacion_avanzada"
+      ],
+      "duration": 150,
+      "level": "Expert",
+      "difficulty_score": 0.3388185802724817,
+      "description": "Técnicas de optimización no lineal, métodos de región de confianza y aplicaciones en machine learning."
+    },
+    {
+      "id": "course_48",
+      "name": "Optimización para Machine Learning",
+      "preconditions": [
+        "calculo_diferencial_e_integral"
+      ],
+      "adds": [
+        "optimizacion"
+      ],
+      "duration": 117,
+      "level": "Advanced",
+      "difficulty_score": 0.20483914530361697,
+      "description": "Aprende los fundamentos de la optimización convexa, gradiente descendente y su uso en algoritmos de ML."
+    },
+    {
+      "id": "course_49",
+      "name": "Sistemas de Recomendación con PLN",
+      "preconditions": [
+        "procesamiento_de_lenguaje_natural",
+        "machine_learning_basico"
+      ],
+      "adds": [
+        "sistemas_de_recomendacion"
+      ],
+      "duration": 170,
+      "level": "Expert",
+      "difficulty_score": 0.31242511714734517,
+      "description": "Construye sistemas de recomendación basados en texto usando técnicas de NLP (embeddings, similitud de coseno)."
+    },
+    {
+      "id": "course_50",
+      "name": "Series Temporales, Deep Learning y PLN (Integrador)",
+      "preconditions": [
+        "optimizacion",
+        "redes_neuronales",
+        "machine_learning_basico",
+        "estadistica_inferencial",
+        "modelos_de_regresion"
+      ],
+      "adds": [
+        "analisis_de_series_temporales",
+        "procesamiento_de_lenguaje_natural",
+        "deep_learning"
+      ],
+      "duration": 123,
+      "level": "Advanced",
+      "difficulty_score": 0.48570366702245554,
+      "description": "Curso integrador que combina predicción temporal, procesamiento de lenguaje natural y aprendizaje profundo."
+    }
+  ]
+}
