@@ -1,7 +1,7 @@
 import heapq
 from dataclasses import dataclass
 from typing import Optional, Callable
-from src.planner.strips import STRIPSProblem
+from src.model.strips import STRIPSProblem
 
 @dataclass
 class SearchStats:
@@ -21,7 +21,7 @@ def search(
     
     Args:
         problem: Instancia de STRIPSProblem.
-        action_cost: Diccionario {nombre_accion: coste} con costes positivos.
+        action_cost: Diccionario {id_curso: coste} con costes positivos.
         heuristic: Función heurística opcional que recibe un estado (frozenset)
                    y devuelve una estimación del coste restante (float).
                    Si es None, se usa h=0 (UCS).
@@ -29,13 +29,9 @@ def search(
     
     Returns:
         Si return_stats=True: (plan, stats)
-            plan: Lista de nombres de acciones (plan) o None si no hay solución.
-            stats: SearchStats con:
-                - expanded_nodes: número de estados expandidos.
-                - generated_total: número total de generaciones de estados
-                  (incluyendo duplicados, el inicial cuenta como 1).
-                - max_frontier_size: tamaño máximo de la cola de prioridad.
-        Si return_stats=False: plan (lista o None).
+            plan: Lista de objetos Course que forman el plan, o None si no hay solución.
+            stats: SearchStats con expanded_nodes, generated_total, max_frontier_size.
+        Si return_stats=False: plan (lista de Course o None).
     """
 
     if heuristic is None:
@@ -55,6 +51,7 @@ def search(
     
     dist = {start: 0.0}
     closed = set()
+    # heap: (f, g, state, plan)  
     heap = [(h(start), 0.0, start, [])]
     heapq.heapify(heap)
     expanded = 0
@@ -79,16 +76,16 @@ def search(
             )
             return (plan, stats) if return_stats else plan
         
-        for action in problem.actions:
+        for action in problem.actions:  
             if action.is_applicable(state):
                 new_state = action.apply(state)
                 new_state_frozen = frozenset(new_state)
-                new_g = g + action_cost.get(action.name, 0.0)
+                new_g = g + action_cost.get(action.id, 0.0)
                 generated_total += 1
                 if new_g < dist.get(new_state_frozen, float('inf')):
                     dist[new_state_frozen] = new_g
                     new_f = new_g + h(new_state_frozen)
-                    heapq.heappush(heap, (new_f, new_g, new_state_frozen, plan + [action.name]))
+                    heapq.heappush(heap, (new_f, new_g, new_state_frozen, plan + [action]))
     
     stats = SearchStats(
         expanded_nodes=expanded,
