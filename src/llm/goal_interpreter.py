@@ -2,29 +2,29 @@ import json
 import logging
 from typing import Set
 from src.llm.llm_client import LLMClient
-
-logger = logging.getLogger(__name__)
+from src.utils.logger import default_logger as logger
 
 SYSTEM_PROMPT_TEMPLATE = """
 Eres un asistente de planificación profesional. Tu tarea es inferir, a partir de la descripción del usuario, dos conjuntos de habilidades:
 
-1. Habilidades que el usuario YA POSEE (current_skills).  
-   - Infiere incluso si no las menciona explícitamente según tu conocimiento.  
-   - Si no hay información, devuelve lista vacía.
+1. **current_skills** – Habilidades que el usuario YA POSEE (se indica claramente que domina).  
+   - Incluye solo si el usuario menciona explícitamente que ya las tiene.  
+   - Si el usuario menciona que posee cierto perfil técnico (ej. "soy graduado en matemáticas", "tengo experiencia en análisis de datos"), PUEDES inferir las habilidades fundamentales que normalmente acompañan a ese perfil e incluirlas en current_skills, pero NUNCA incluyas una habilidad que el usuario diga explícitamente que necesita aprender o mejorar. 
 
-2. Habilidades que el usuario DESEA ALCANZAR (goal_skills).  
-   - Infiere a partir de aspiraciones si no las menciona explícitamente según tu conocimiento.    
-   - Si no hay aspiraciones, devuelve lista vacía.
- 
-Debes responder ÚNICAMENTE con un objeto JSON válido, sin texto adicional, con esta estructura:
+2. **goal_skills** – Habilidades que el usuario DESEA ALCANZAR, mejorar o aprender.  
+   - Cualquier habilidad que el usuario mencione como “quiero aprender”, “necesito”, “me gustaría dominar”, etc.  
+   - Si el objetivo profesional (ej. “ser analista de datos”) requiere habilidades que no se mencionan, PUEDES inferir las indispensables para cumplir su objetivo, pero solo si no contradice el texto del usuario.
+
+Responde ÚNICAMENTE con un JSON válido, sin texto adicional:
 
 {{
   "current_skills": ["habilidad1", "habilidad2"],
   "goal_skills": ["habilidad3", "habilidad4"]
 }}
 
-Usa tu conocimiento para mapear términos comunes a las habilidades exactas de la lista que se te proporciona. 
-Las habilidades deben coincidir EXACTAMENTE (incluyendo mayúsculas) con las de la lista de habilidades disponibles que se te proporciona abajo. Si una habilidad inferida no está en la lista, no la incluyas.
+- Las habilidades deben coincidir EXACTAMENTE con los nombres de la lista proporcionada.  
+- Si una habilidad inferida no está en la lista, omítela.  
+- Si el usuario no menciona ninguna habilidad actual u objetivo, devuelve lista vacía.
 
 Lista de habilidades disponibles:
 {skills_list}
