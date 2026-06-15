@@ -1,0 +1,174 @@
+{
+  "experiment_name": "cientifico_datos_junior",
+  "timestamp": "2026-06-15T08:28:20.219488",
+  "definition": {
+    "name": "cientifico_datos_junior",
+    "user_text": "Soy graduado en matemáticas y tengo conocimientos básicos de programación en Python. Quiero ser científico de datos junior. Me falta aprender sobre visualización de datos, machine learning básico (regresión, clasificación) y algo de estadística inferencial. También me interesaría tener nociones de big data.",
+    "dataset_path": "data\\ciencia_de_datos",
+    "planner_name": "a_star_maxmin",
+    "return_stats": true,
+    "run_simulation": true,
+    "run_evaluation": true
+  },
+  "llm_interpretation": {
+    "initial_skills": [
+      "matematicas_basicas",
+      "programacion_basica",
+      "python_para_ciencia_de_datos"
+    ],
+    "goal_skills": [
+      "visualizacion_de_datos",
+      "machine_learning_basico",
+      "modelos_de_regresion",
+      "estadistica_inferencial",
+      "big_data_basico"
+    ]
+  },
+  "plan": {
+    "course_ids": [
+      "course_45",
+      "course_5",
+      "course_24",
+      "course_42",
+      "course_16",
+      "course_35"
+    ],
+    "courses": [
+      {
+        "id": "course_45",
+        "name": "Estadística Descriptiva Fundamental",
+        "preconditions": [],
+        "adds": [
+          "estadistica_descriptiva"
+        ],
+        "level": "Beginner",
+        "duration": 43,
+        "difficulty_score": 0.05,
+        "description": "Conceptos básicos de estadística descriptiva: medidas de centralidad, dispersión y representaciones gráficas."
+      },
+      {
+        "id": "course_5",
+        "name": "Álgebra Lineal y Visualización de Datos",
+        "preconditions": [
+          "matematicas_basicas",
+          "estadistica_descriptiva"
+        ],
+        "adds": [
+          "visualizacion_de_datos",
+          "algebra_lineal"
+        ],
+        "level": "Intermediate",
+        "duration": 71,
+        "difficulty_score": 0.18304822526629574,
+        "description": "Aprende operaciones con vectores y matrices, y crea visualizaciones impactantes usando bibliotecas como Matplotlib y Seaborn."
+      },
+      {
+        "id": "course_24",
+        "name": "Probabilidad y Álgebra Lineal Aplicada",
+        "preconditions": [
+          "matematicas_basicas",
+          "estadistica_descriptiva"
+        ],
+        "adds": [
+          "algebra_lineal",
+          "probabilidad"
+        ],
+        "level": "Intermediate",
+        "duration": 72,
+        "difficulty_score": 0.17778463419648918,
+        "description": "Conceptos clave de probabilidad (distribuciones, Bayes) y álgebra lineal para entender el funcionamiento de los algoritmos de ML."
+      },
+      {
+        "id": "course_42",
+        "name": "SQL Básico y Cálculo Diferencial",
+        "preconditions": [
+          "programacion_basica",
+          "algebra_lineal"
+        ],
+        "adds": [
+          "calculo_diferencial_e_integral",
+          "sql_basico"
+        ],
+        "level": "Intermediate",
+        "duration": 79,
+        "difficulty_score": 0.14274727066068318,
+        "description": "Domina las consultas SQL y los fundamentos del cálculo (derivadas e integrales) para optimización."
+      },
+      {
+        "id": "course_16",
+        "name": "Estadística Inferencial y Machine Learning Básico",
+        "preconditions": [
+          "python_para_ciencia_de_datos",
+          "probabilidad"
+        ],
+        "adds": [
+          "estadistica_inferencial",
+          "machine_learning_basico"
+        ],
+        "level": "Intermediate",
+        "duration": 80,
+        "difficulty_score": 0.1486565165730495,
+        "description": "Combina la inferencia estadística (intervalos, test de hipótesis) con los primeros modelos de machine learning."
+      },
+      {
+        "id": "course_35",
+        "name": "Modelos de Regresión, Limpieza de Datos y Big Data",
+        "preconditions": [
+          "calculo_diferencial_e_integral",
+          "machine_learning_basico",
+          "python_para_ciencia_de_datos",
+          "sql_basico"
+        ],
+        "adds": [
+          "modelos_de_regresion",
+          "limpieza_de_datos",
+          "big_data_basico"
+        ],
+        "level": "Advanced",
+        "duration": 123,
+        "difficulty_score": 0.4349392500290913,
+        "description": "Aprende a preparar datos, construir modelos de regresión y manejar grandes volúmenes con herramientas de big data."
+      }
+    ]
+  },
+  "planner_stats": {
+    "expanded_nodes": 129,
+    "generated_total": 3138,
+    "max_frontier_size": 197
+  },
+  "simulation_stats": {
+    "success_rate": 0.8018,
+    "success_ci_95": [
+      0.7938713302128468,
+      0.8094968798555731
+    ],
+    "mean_time": 575.8380749025695,
+    "median_time": 545.3408203965547,
+    "reach_probability": {
+      "course_45": 1.0,
+      "course_5": 0.9974,
+      "course_24": 0.9658,
+      "course_42": 0.9394,
+      "course_16": 0.924,
+      "course_35": 0.9103
+    },
+    "success_probability": {
+      "course_45": 0.9974,
+      "course_5": 0.9683176258271506,
+      "course_24": 0.9726651480637813,
+      "course_42": 0.9836065573770492,
+      "course_16": 0.9851731601731601,
+      "course_35": 0.8808085246621993
+    },
+    "avg_attempts_per_course": {
+      "course_45": 1.0832,
+      "course_5": 1.2948666532985762,
+      "course_24": 1.2694139573410643,
+      "course_42": 1.2018309559293165,
+      "course_16": 1.2024891774891775,
+      "course_35": 1.5779413380204328
+    }
+  },
+  "llm_evaluation": "**Cumplimiento del objetivo del usuario: 5/5** - La trayectoria cubre todas las necesidades solicitadas (visualización de datos, machine learning básico, estadística inferencial y nociones de big data), sin contenido no relevante y con habilidades finales alineadas al objetivo.\n\n**Progreso profesional (crecimiento en conocimiento): 4/5** - El avance es lógico y progresivo, aunque el curso 4 introduce SQL y cálculo diferencial antes de estadística inferencial y ML. La dificultad acumulada (0.43 en el último curso) sugiere un ritmo exigente pero manejable.\n\nPuntuación global: 4.5/5",
+  "elapsed_time_seconds": 6.497932099999161
+}

@@ -1,0 +1,139 @@
+{
+  "experiment_name": "a_star_basic_exp",
+  "timestamp": "2026-06-15T08:57:42.861241",
+  "definition": {
+    "name": "a_star_basic_exp",
+    "user_text": "Me gustaría aprender a consultar bases de datos con SQL y a hacer visualizaciones básicas y limpieza de datos.",
+    "dataset_path": "data\\ciencia_de_datos",
+    "planner_name": "a_star_basic",
+    "return_stats": true,
+    "run_simulation": false,
+    "run_evaluation": false
+  },
+  "llm_interpretation": {
+    "initial_skills": [],
+    "goal_skills": [
+      "sql_basico",
+      "visualizacion_de_datos",
+      "limpieza_de_datos"
+    ]
+  },
+  "plan": {
+    "course_ids": [
+      "course_29",
+      "course_5",
+      "course_14",
+      "course_34",
+      "course_42",
+      "course_35"
+    ],
+    "courses": [
+      {
+        "id": "course_29",
+        "name": "Estadística, Matemáticas y Programación Básica",
+        "preconditions": [],
+        "adds": [
+          "estadistica_descriptiva",
+          "programacion_basica",
+          "matematicas_basicas"
+        ],
+        "level": "Beginner",
+        "duration": 55,
+        "difficulty_score": 0.07129705707526983,
+        "description": "Un curso introductorio que cubre estadística descriptiva, matemáticas elementales y programación, ideal para empezar."
+      },
+      {
+        "id": "course_5",
+        "name": "Álgebra Lineal y Visualización de Datos",
+        "preconditions": [
+          "estadistica_descriptiva",
+          "matematicas_basicas"
+        ],
+        "adds": [
+          "algebra_lineal",
+          "visualizacion_de_datos"
+        ],
+        "level": "Intermediate",
+        "duration": 71,
+        "difficulty_score": 0.18304822526629574,
+        "description": "Aprende operaciones con vectores y matrices, y crea visualizaciones impactantes usando bibliotecas como Matplotlib y Seaborn."
+      },
+      {
+        "id": "course_14",
+        "name": "Python para Ciencia de Datos, Probabilidad y Álgebra Lineal",
+        "preconditions": [
+          "estadistica_descriptiva",
+          "programacion_basica",
+          "matematicas_basicas"
+        ],
+        "adds": [
+          "algebra_lineal",
+          "probabilidad",
+          "python_para_ciencia_de_datos"
+        ],
+        "level": "Intermediate",
+        "duration": 84,
+        "difficulty_score": 0.21305217023132542,
+        "description": "Aprende a programar en Python con NumPy/Pandas, conceptos de probabilidad y operaciones de álgebra lineal, claves para el ML."
+      },
+      {
+        "id": "course_34",
+        "name": "Machine Learning Básico (Scikit-learn)",
+        "preconditions": [
+          "probabilidad",
+          "python_para_ciencia_de_datos"
+        ],
+        "adds": [
+          "machine_learning_basico"
+        ],
+        "level": "Intermediate",
+        "duration": 72,
+        "difficulty_score": 0.08707949837220383,
+        "description": "Aplica algoritmos de clasificación, regresión y clustering con scikit-learn, y evalúa su rendimiento."
+      },
+      {
+        "id": "course_42",
+        "name": "SQL Básico y Cálculo Diferencial",
+        "preconditions": [
+          "algebra_lineal",
+          "programacion_basica"
+        ],
+        "adds": [
+          "calculo_diferencial_e_integral",
+          "sql_basico"
+        ],
+        "level": "Intermediate",
+        "duration": 79,
+        "difficulty_score": 0.14274727066068318,
+        "description": "Domina las consultas SQL y los fundamentos del cálculo (derivadas e integrales) para optimización."
+      },
+      {
+        "id": "course_35",
+        "name": "Modelos de Regresión, Limpieza de Datos y Big Data",
+        "preconditions": [
+          "machine_learning_basico",
+          "calculo_diferencial_e_integral",
+          "sql_basico",
+          "python_para_ciencia_de_datos"
+        ],
+        "adds": [
+          "big_data_basico",
+          "modelos_de_regresion",
+          "limpieza_de_datos"
+        ],
+        "level": "Advanced",
+        "duration": 123,
+        "difficulty_score": 0.4349392500290913,
+        "description": "Aprende a preparar datos, construir modelos de regresión y manejar grandes volúmenes con herramientas de big data."
+      }
+    ]
+  },
+  "planner_stats": {
+    "expanded_nodes": 383,
+    "generated_total": 9168,
+    "max_frontier_size": 312
+  },
+  "simulation_stats": null,
+  "llm_evaluation": null,
+  "elapsed_time_seconds": 1.3164413999766111
+}

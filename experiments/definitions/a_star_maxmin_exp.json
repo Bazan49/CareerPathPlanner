@@ -1,0 +1,9 @@
+{
+  "name": "a_star_maxmin_exp",
+  "user_text": "Me gustaría aprender a consultar bases de datos con SQL y a hacer visualizaciones básicas y limpieza de datos.",
+  "dataset_path": "data\\ciencia_de_datos",
+  "planner_name": "a_star_maxmin",
+  "return_stats": true,
+  "run_simulation": false,
+  "run_evaluation": false
+}

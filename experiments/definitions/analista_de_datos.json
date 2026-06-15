@@ -1,0 +1,9 @@
+{
+  "name": "analista_de_datos",
+  "user_text": "Quiero trabajar como analista de datos. Ya sé usar Excel y tengo nociones de estadística descriptiva. Necesito aprender SQL para consultar bases de datos, mejorar mis habilidades de visualización con herramientas como Tableau o Power BI, y comprender los fundamentos de la limpieza de datos.",
+  "dataset_path": "data\\ciencia_de_datos",
+  "planner_name": "a_star_maxmin",
+  "return_stats": true,
+  "run_simulation": true,
+  "run_evaluation": true
+}

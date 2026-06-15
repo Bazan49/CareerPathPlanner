@@ -1,0 +1,9 @@
+{
+  "name": "ingeniero_ML",
+  "user_text": "Mi objetivo es convertirme en ingeniero de machine learning. Tengo buena base de programación en Python y conozco librerías como pandas y scikit-learn. Quiero profundizar en deep learning, despliegue de modelos en la nube (AWS/GCP) y en herramientas de MLOps como Docker y Kubernetes.",
+  "dataset_path": "data\\ciencia_de_datos",
+  "planner_name": "a_star_maxmin",
+  "return_stats": true,
+  "run_simulation": true,
+  "run_evaluation": true
+}

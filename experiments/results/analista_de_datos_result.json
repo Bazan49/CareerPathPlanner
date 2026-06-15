@@ -1,0 +1,174 @@
+{
+  "experiment_name": "analista_de_datos",
+  "timestamp": "2026-06-15T08:27:28.517053",
+  "definition": {
+    "name": "analista_de_datos",
+    "user_text": "Quiero trabajar como analista de datos. Ya sé usar Excel y tengo nociones de estadística descriptiva. Necesito aprender SQL para consultar bases de datos, mejorar mis habilidades de visualización con herramientas como Tableau o Power BI, y comprender los fundamentos de la limpieza de datos.",
+    "dataset_path": "data\\ciencia_de_datos",
+    "planner_name": "a_star_maxmin",
+    "return_stats": true,
+    "run_simulation": true,
+    "run_evaluation": true
+  },
+  "llm_interpretation": {
+    "initial_skills": [
+      "estadistica_descriptiva",
+      "programacion_basica"
+    ],
+    "goal_skills": [
+      "limpieza_de_datos",
+      "sql_basico",
+      "visualizacion_de_datos"
+    ]
+  },
+  "plan": {
+    "course_ids": [
+      "course_21",
+      "course_5",
+      "course_14",
+      "course_34",
+      "course_42",
+      "course_35"
+    ],
+    "courses": [
+      {
+        "id": "course_21",
+        "name": "Introducción a Ciencia de Datos, Programación y Matemáticas",
+        "preconditions": [],
+        "adds": [
+          "matematicas_basicas",
+          "programacion_basica",
+          "introduccion_a_la_ciencia_de_datos"
+        ],
+        "level": "Beginner",
+        "duration": 51,
+        "difficulty_score": 0.05840094797541243,
+        "description": "Una base sólida: nociones de ciencia de datos, fundamentos de programación y matemáticas básicas."
+      },
+      {
+        "id": "course_5",
+        "name": "Álgebra Lineal y Visualización de Datos",
+        "preconditions": [
+          "estadistica_descriptiva",
+          "matematicas_basicas"
+        ],
+        "adds": [
+          "algebra_lineal",
+          "visualizacion_de_datos"
+        ],
+        "level": "Intermediate",
+        "duration": 71,
+        "difficulty_score": 0.18304822526629574,
+        "description": "Aprende operaciones con vectores y matrices, y crea visualizaciones impactantes usando bibliotecas como Matplotlib y Seaborn."
+      },
+      {
+        "id": "course_14",
+        "name": "Python para Ciencia de Datos, Probabilidad y Álgebra Lineal",
+        "preconditions": [
+          "estadistica_descriptiva",
+          "programacion_basica",
+          "matematicas_basicas"
+        ],
+        "adds": [
+          "python_para_ciencia_de_datos",
+          "algebra_lineal",
+          "probabilidad"
+        ],
+        "level": "Intermediate",
+        "duration": 84,
+        "difficulty_score": 0.21305217023132542,
+        "description": "Aprende a programar en Python con NumPy/Pandas, conceptos de probabilidad y operaciones de álgebra lineal, claves para el ML."
+      },
+      {
+        "id": "course_34",
+        "name": "Machine Learning Básico (Scikit-learn)",
+        "preconditions": [
+          "python_para_ciencia_de_datos",
+          "probabilidad"
+        ],
+        "adds": [
+          "machine_learning_basico"
+        ],
+        "level": "Intermediate",
+        "duration": 72,
+        "difficulty_score": 0.08707949837220383,
+        "description": "Aplica algoritmos de clasificación, regresión y clustering con scikit-learn, y evalúa su rendimiento."
+      },
+      {
+        "id": "course_42",
+        "name": "SQL Básico y Cálculo Diferencial",
+        "preconditions": [
+          "algebra_lineal",
+          "programacion_basica"
+        ],
+        "adds": [
+          "sql_basico",
+          "calculo_diferencial_e_integral"
+        ],
+        "level": "Intermediate",
+        "duration": 79,
+        "difficulty_score": 0.14274727066068318,
+        "description": "Domina las consultas SQL y los fundamentos del cálculo (derivadas e integrales) para optimización."
+      },
+      {
+        "id": "course_35",
+        "name": "Modelos de Regresión, Limpieza de Datos y Big Data",
+        "preconditions": [
+          "python_para_ciencia_de_datos",
+          "machine_learning_basico",
+          "sql_basico",
+          "calculo_diferencial_e_integral"
+        ],
+        "adds": [
+          "modelos_de_regresion",
+          "limpieza_de_datos",
+          "big_data_basico"
+        ],
+        "level": "Advanced",
+        "duration": 123,
+        "difficulty_score": 0.4349392500290913,
+        "description": "Aprende a preparar datos, construir modelos de regresión y manejar grandes volúmenes con herramientas de big data."
+      }
+    ]
+  },
+  "planner_stats": {
+    "expanded_nodes": 185,
+    "generated_total": 4209,
+    "max_frontier_size": 226
+  },
+  "simulation_stats": {
+    "success_rate": 0.7975,
+    "success_ci_95": [
+      0.7895099282865002,
+      0.8052615842892287
+    ],
+    "mean_time": 588.2024607673663,
+    "median_time": 556.736275158624,
+    "reach_probability": {
+      "course_21": 1.0,
+      "course_5": 0.9978,
+      "course_14": 0.9639,
+      "course_34": 0.928,
+      "course_42": 0.9223,
+      "course_35": 0.9097
+    },
+    "success_probability": {
+      "course_21": 0.9978,
+      "course_5": 0.966025255562237,
+      "course_14": 0.9627554725593941,
+      "course_34": 0.9938577586206897,
+      "course_42": 0.9863385015721565,
+      "course_35": 0.8766626360338573
+    },
+    "avg_attempts_per_course": {
+      "course_21": 1.0977,
+      "course_5": 1.293846462216877,
+      "course_14": 1.311858076563959,
+      "course_34": 1.1150862068965517,
+      "course_42": 1.1940800173479345,
+      "course_35": 1.5931625810706826
+    }
+  },
+  "llm_evaluation": "**Cumplimiento del objetivo del usuario: 4/5** - La trayectoria cubre SQL Básico, limpieza de datos y visualización (aunque no especifica Tableau/Power BI directamente, se incluye \"Visualización de Datos\"). Incluye contenido adicional no solicitado (álgebra lineal, cálculo, machine learning), pero el núcleo principal está presente.\n\n**Progreso profesional (crecimiento en conocimiento): 5/5** - El avance es lógico y progresivo: desde fundamentos matemáticos hasta habilidades técnicas clave para un analista de datos. El ritmo es eficiente y la profundidad adecuada.\n\nPuntuación global: 4.5/5",
+  "elapsed_time_seconds": 3.8372808000131045
+}

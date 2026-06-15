@@ -1,0 +1,253 @@
+{
+  "experiment_name": "ingeniero_ML",
+  "timestamp": "2026-06-15T08:29:05.413829",
+  "definition": {
+    "name": "ingeniero_ML",
+    "user_text": "Mi objetivo es convertirme en ingeniero de machine learning. Tengo buena base de programación en Python y conozco librerías como pandas y scikit-learn. Quiero profundizar en deep learning, despliegue de modelos en la nube (AWS/GCP) y en herramientas de MLOps como Docker y Kubernetes.",
+    "dataset_path": "data\\ciencia_de_datos",
+    "planner_name": "a_star_maxmin",
+    "return_stats": true,
+    "run_simulation": true,
+    "run_evaluation": true
+  },
+  "llm_interpretation": {
+    "initial_skills": [
+      "python_para_ciencia_de_datos",
+      "machine_learning_basico"
+    ],
+    "goal_skills": [
+      "deep_learning",
+      "cloud_computing_para_ciencia_de_datos",
+      "ciencia_de_datos_en_produccion"
+    ]
+  },
+  "plan": {
+    "course_ids": [
+      "course_29",
+      "course_24",
+      "course_30",
+      "course_42",
+      "course_31",
+      "course_48",
+      "course_20",
+      "course_50",
+      "course_23",
+      "course_40"
+    ],
+    "courses": [
+      {
+        "id": "course_29",
+        "name": "Estadística, Matemáticas y Programación Básica",
+        "preconditions": [],
+        "adds": [
+          "programacion_basica",
+          "matematicas_basicas",
+          "estadistica_descriptiva"
+        ],
+        "level": "Beginner",
+        "duration": 55,
+        "difficulty_score": 0.07129705707526983,
+        "description": "Un curso introductorio que cubre estadística descriptiva, matemáticas elementales y programación, ideal para empezar."
+      },
+      {
+        "id": "course_24",
+        "name": "Probabilidad y Álgebra Lineal Aplicada",
+        "preconditions": [
+          "matematicas_basicas",
+          "estadistica_descriptiva"
+        ],
+        "adds": [
+          "probabilidad",
+          "algebra_lineal"
+        ],
+        "level": "Intermediate",
+        "duration": 72,
+        "difficulty_score": 0.17778463419648918,
+        "description": "Conceptos clave de probabilidad (distribuciones, Bayes) y álgebra lineal para entender el funcionamiento de los algoritmos de ML."
+      },
+      {
+        "id": "course_30",
+        "name": "Estadística Inferencial",
+        "preconditions": [
+          "probabilidad"
+        ],
+        "adds": [
+          "estadistica_inferencial"
+        ],
+        "level": "Intermediate",
+        "duration": 75,
+        "difficulty_score": 0.08206737088692805,
+        "description": "Aprende intervalos de confianza, pruebas de hipótesis y cómo tomar decisiones basadas en muestras de datos."
+      },
+      {
+        "id": "course_42",
+        "name": "SQL Básico y Cálculo Diferencial",
+        "preconditions": [
+          "programacion_basica",
+          "algebra_lineal"
+        ],
+        "adds": [
+          "sql_basico",
+          "calculo_diferencial_e_integral"
+        ],
+        "level": "Intermediate",
+        "duration": 79,
+        "difficulty_score": 0.14274727066068318,
+        "description": "Domina las consultas SQL y los fundamentos del cálculo (derivadas e integrales) para optimización."
+      },
+      {
+        "id": "course_31",
+        "name": "Big Data Básico con SQL y Python",
+        "preconditions": [
+          "python_para_ciencia_de_datos",
+          "sql_basico"
+        ],
+        "adds": [
+          "big_data_basico"
+        ],
+        "level": "Advanced",
+        "duration": 102,
+        "difficulty_score": 0.21014638480559109,
+        "description": "Introducción a Spark y Hadoop, con ejemplos prácticos usando SQL y Python para procesar datos a gran escala."
+      },
+      {
+        "id": "course_48",
+        "name": "Optimización para Machine Learning",
+        "preconditions": [
+          "calculo_diferencial_e_integral"
+        ],
+        "adds": [
+          "optimizacion"
+        ],
+        "level": "Advanced",
+        "duration": 117,
+        "difficulty_score": 0.20483914530361697,
+        "description": "Aprende los fundamentos de la optimización convexa, gradiente descendente y su uso en algoritmos de ML."
+      },
+      {
+        "id": "course_20",
+        "name": "Modelos de Regresión y Redes Neuronales",
+        "preconditions": [
+          "machine_learning_basico",
+          "calculo_diferencial_e_integral",
+          "algebra_lineal"
+        ],
+        "adds": [
+          "modelos_de_regresion",
+          "redes_neuronales"
+        ],
+        "level": "Advanced",
+        "duration": 130,
+        "difficulty_score": 0.3647094724190215,
+        "description": "Aprende regresión lineal/logística y los fundamentos de las redes neuronales (perceptrones, backpropagation)."
+      },
+      {
+        "id": "course_50",
+        "name": "Series Temporales, Deep Learning y PLN (Integrador)",
+        "preconditions": [
+          "optimizacion",
+          "redes_neuronales",
+          "estadistica_inferencial",
+          "modelos_de_regresion",
+          "machine_learning_basico"
+        ],
+        "adds": [
+          "procesamiento_de_lenguaje_natural",
+          "deep_learning",
+          "analisis_de_series_temporales"
+        ],
+        "level": "Advanced",
+        "duration": 123,
+        "difficulty_score": 0.48570366702245554,
+        "description": "Curso integrador que combina predicción temporal, procesamiento de lenguaje natural y aprendizaje profundo."
+      },
+      {
+        "id": "course_23",
+        "name": "Cloud Computing para Datos y Modelos Avanzados",
+        "preconditions": [
+          "machine_learning_basico",
+          "deep_learning",
+          "big_data_basico"
+        ],
+        "adds": [
+          "modelos_avanzados_de_machine_learning",
+          "cloud_computing_para_ciencia_de_datos"
+        ],
+        "level": "Expert",
+        "duration": 168,
+        "difficulty_score": 0.5698990184374013,
+        "description": "Aprende a desplegar modelos en la nube (AWS, GCP, Azure) y a construir pipelines de ML escalables."
+      },
+      {
+        "id": "course_40",
+        "name": "Sistemas de Recomendación y Despliegue en Producción",
+        "preconditions": [
+          "machine_learning_basico",
+          "procesamiento_de_lenguaje_natural",
+          "modelos_avanzados_de_machine_learning",
+          "cloud_computing_para_ciencia_de_datos"
+        ],
+        "adds": [
+          "sistemas_de_recomendacion",
+          "ciencia_de_datos_en_produccion"
+        ],
+        "level": "Expert",
+        "duration": 170,
+        "difficulty_score": 0.7542319576616632,
+        "description": "Aprende a implementar sistemas de recomendación a gran escala y desplegar modelos en entornos productivos."
+      }
+    ]
+  },
+  "planner_stats": {
+    "expanded_nodes": 1101,
+    "generated_total": 35425,
+    "max_frontier_size": 494
+  },
+  "simulation_stats": {
+    "success_rate": 0.4408,
+    "success_ci_95": [
+      0.4310935089670472,
+      0.4505519581103203
+    ],
+    "mean_time": 1394.5825281973614,
+    "median_time": 1362.2451994158005,
+    "reach_probability": {
+      "course_29": 1.0,
+      "course_24": 0.9949,
+      "course_30": 0.9649,
+      "course_42": 0.9606,
+      "course_31": 0.9445,
+      "course_48": 0.9167,
+      "course_20": 0.8933,
+      "course_50": 0.8188,
+      "course_23": 0.7136,
+      "course_40": 0.6093
+    },
+    "success_probability": {
+      "course_29": 0.9949,
+      "course_24": 0.9698462157000703,
+      "course_30": 0.9955435796455592,
+      "course_42": 0.9832396418904851,
+      "course_31": 0.970566437268396,
+      "course_48": 0.9744736555034362,
+      "course_20": 0.9166013657226015,
+      "course_50": 0.8715192965315095,
+      "course_23": 0.8538396860986547,
+      "course_40": 0.7234531429509273
+    },
+    "avg_attempts_per_course": {
+      "course_29": 1.1223,
+      "course_24": 1.2755050758870239,
+      "course_30": 1.119908798839258,
+      "course_42": 1.2082032063293775,
+      "course_31": 1.2960296453149815,
+      "course_48": 1.2638813134067852,
+      "course_20": 1.4752042986678608,
+      "course_50": 1.5959941377625795,
+      "course_23": 1.6390134529147982,
+      "course_40": 1.9072706384375513
+    }
+  },
+  "llm_evaluation": "**Cumplimiento del objetivo del usuario: 5/5** - La trayectoria cubre todas las áreas solicitadas (deep learning, despliegue en cloud y MLOps), con habilidades finales que incluyen Cloud Computing, Deep Learning y Ciencia de Datos en Producción. La duración total (1091h) es razonable para un plan completo.\n\n**Progreso profesional (crecimiento en conocimiento): 5/5** - El avance es lógico y progresivo: desde fundamentos matemáticos/estadísticos hasta modelos avanzados y despliegue. Los cursos integradores (ej. Curso 8) consolidan conocimientos clave como Deep Learning.\n\nPuntuación global: 5/5",
+  "elapsed_time_seconds": 4.493623599992134
+}

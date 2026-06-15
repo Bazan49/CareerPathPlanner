@@ -1,0 +1,9 @@
+{
+  "name": "cientifico_datos_junior",
+  "user_text": "Soy graduado en matemáticas y tengo conocimientos básicos de programación en Python. Quiero ser científico de datos junior. Me falta aprender sobre visualización de datos, machine learning básico (regresión, clasificación) y algo de estadística inferencial. También me interesaría tener nociones de big data.",
+  "dataset_path": "data\\ciencia_de_datos",
+  "planner_name": "a_star_maxmin",
+  "return_stats": true,
+  "run_simulation": true,
+  "run_evaluation": true
+}
