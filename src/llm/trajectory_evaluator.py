@@ -99,8 +99,6 @@ def evaluate_trajectory(
         user_objective, initial_skills, plan, total_planned_duration, skill_map
     )
 
-    print(user_prompt)
-
     messages = [
         {"role": "system", "content": SYSTEM_PROMPT},
         {"role": "user", "content": user_prompt}
