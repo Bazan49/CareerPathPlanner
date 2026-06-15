@@ -2,7 +2,6 @@
 Pipeline completo de planificación, simulación y evaluación.
 """
 
-import time
 from pathlib import Path
 from typing import List, Optional, Tuple, Any
 from src.llm.llm_client import LLMClient
@@ -30,7 +29,7 @@ def run_planning_pipeline(
     run_simulation: bool = True,
     run_evaluation: bool = True,
     sim_params: Optional[SimulationParams] = None
-) -> Tuple[Optional[List[Course]], Optional[Any], Optional[SimulationResult], Optional[dict]]:
+) -> Tuple[Optional[List[Course]], Optional[Any], Optional[SimulationResult], Optional[str], List[str], List[str]]:
     """
     Ejecuta el pipeline completo:
     - Interpretación del objetivo con LLM
@@ -40,11 +39,13 @@ def run_planning_pipeline(
     - Evaluación con LLM (opcional)
     
     Returns:
-        (plan, planner_stats, sim_result, evaluation)
+        (plan, planner_stats, sim_result, evaluation, initial_skill_ids, goal_skill_ids)
         - plan: lista de objetos Course o None
         - planner_stats: objeto SearchStats o None (solo si return_stats=True)
         - sim_result: SimulationResult o None
-        - evaluation: evaluación del LLM o None
+        - evaluation: str con la evaluación del LLM o None
+        - initial_skill_ids: lista de IDs (strings) de habilidades iniciales detectadas
+        - goal_skill_ids: lista de IDs (strings) de habilidades objetivo detectadas
     """
 
     logger.info("=== Inicio del pipeline de planificación ===")
@@ -110,12 +111,13 @@ def run_planning_pipeline(
         logger.info("Iniciando simulación Monte Carlo...")
         if sim_params is None:
             sim_params = SimulationParams()
-        sim_result = simulate_plan(plan, sim_params)  
+        sim_result = simulate_plan(plan, sim_params)
 
     # Evaluación con LLM (opcional)
     evaluation = None
     if run_evaluation:
         logger.info("Iniciando evaluación con LLM...")
+
         # Calcular habilidades finales a partir del plan
         state = set(problem.initial)
         for course in plan:
@@ -131,8 +133,7 @@ def run_planning_pipeline(
             plan=plan,
             final_skills=final_skills,
             llm_client=llm_client,
-            sim_result=sim_result
         )
 
     logger.info("=== Pipeline completado ===")
-    return plan, planner_stats, sim_result, evaluation
+    return plan, planner_stats, sim_result, evaluation, interpretation["current_skills"], interpretation["goal_skills"]

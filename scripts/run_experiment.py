@@ -85,7 +85,7 @@ def run_experiment(experiment_name: str = None, definition_file: Path = None):
 
     # Ejecutar pipeline
     start_time = time.perf_counter()
-    plan, planner_stats, sim_result, evaluation = run_planning_pipeline(
+    plan, planner_stats, sim_result, evaluation, initial_skills, goal_skills = run_planning_pipeline(
         user_text=definition["user_text"],
         dataset_path=Path(definition["dataset_path"]),
         planner_name=definition["planner_name"],
@@ -105,6 +105,8 @@ def run_experiment(experiment_name: str = None, definition_file: Path = None):
         sim_result=sim_result,
         evaluation=evaluation,
         elapsed_time=elapsed,
+        initial_skills=initial_skills,
+        goal_skills=goal_skills
     )
 
     # Mostrar al usuario dónde se guardaron los resultados

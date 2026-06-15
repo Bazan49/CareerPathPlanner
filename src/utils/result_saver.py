@@ -3,6 +3,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 from dataclasses import asdict
+from src.model.skill import Skill
 
 def save_experiment_results(
     experiment_name: str,
@@ -13,6 +14,8 @@ def save_experiment_results(
     evaluation: Optional[str],
     elapsed_time: float,
     output_dir: Path = Path("experiments/results"),
+    initial_skills: Optional[List[str]] = None,  
+    goal_skills: Optional[List[str]] = None,      
 ) -> Path:
     """
     Guarda los resultados de un experimento en un archivo JSON.
@@ -26,6 +29,8 @@ def save_experiment_results(
         evaluation: Evaluación del LLM (o None).
         elapsed_time: Tiempo de ejecución en segundos.
         output_dir: Directorio donde guardar el JSON.
+        initial_skills: Habilidades iniciales detectadas por el LLM.
+        goal_skills: Habilidades objetivo detectadas por el LLM.
 
     Returns:
         Ruta al archivo JSON guardado.
@@ -37,6 +42,10 @@ def save_experiment_results(
         "experiment_name": experiment_name,
         "timestamp": datetime.now().isoformat(),
         "definition": definition,
+        "llm_interpretation": {                             
+            "initial_skills": initial_skills,
+            "goal_skills": goal_skills
+        },
         "plan": {
             "course_ids": [c.id for c in plan] if plan else [],
             "courses": [
